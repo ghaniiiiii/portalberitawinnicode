@@ -1,66 +1,118 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📰 Portal Berita dengan Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**website portal berita** adalah aplikasi portal berita yang bersih dan modern, dibangun menggunakan **Laravel 10**. Aplikasi ini menyajikan berita dengan cepat, antarmuka uncluttered (tidak berantakan), dan dilengkapi dengan panel admin yang efisien berkat **Filament**. Sistem ini memungkinkan manajemen konten yang mudah dan terstruktur.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🌟 Tentang Proyek
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Proyek ini bertujuan untuk menyediakan platform portal berita yang cepat, aman, dan mudah digunakan — baik dari sisi pembaca maupun administrator. Fokus utama adalah menciptakan:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Pengalaman membaca yang nyaman
+- Sistem pengelolaan konten yang terpusat dan intuitif
+- Manajemen artikel, kategori, penulis, dan iklan dalam satu panel
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Dibangun Dengan
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- ⚙️ [Laravel 10](https://laravel.com/) – Framework PHP yang elegan
+- 🧱 [Bootsrab stisla]([https://filamentphp.com/](https://react-free-admin-dashboard-template.netlify.app)) – template bootsrap
+- 🛢️ MySQL – Sistem manajemen basis data relasional
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Fitur Utama
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 📰 Tampilan Publik:
+- Halaman utama dinamis (navbar, detail berita, rekomenadasi berita, berita terbaru, komen, tags, iklan, footer)
+- Detail artikel dengan fokus pada keterbacaan
+- Halaman kategori untuk melihat berita per topik
+- Profil penulis dan daftar artikel terkait
+- Pencarian berita interaktif
 
-### Premium Partners
+### 🔧 Panel Admin (Filament):
+- CRUD Artikel
+- CRUD Kategori
+- CRUD footer
+- CRUD Iklan Banner
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+---
 
-## Contributing
+## 🔧 Instalasi & Konfigurasi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### ✅ Prasyarat
 
-## Code of Conduct
+Pastikan server lokal Anda memenuhi spesifikasi berikut:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- PHP 8.2 atau lebih tinggi
+- Composer
+- Database MySQL/MariaDB
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 🛠️ Langkah Instalasi
 
-## License
+#### 1. Clone Repository
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+https://github.com/ghaniiiiii/portalberitawinnicode.git
+```
+
+#### 2. Install depedensi PHP
+
+```bash
+composer install
+```
+Buat & Konfigurasi File Environment Salin file .env.example, lalu generate kunci aplikasi.
+
+Untuk Windows: copy .env.example .env
+Untuk macOS/Linux: cp .env.example .env
+php artisan key:generate
+Setup Database (Import dari File .sql)
+
+a. Buka XAMPP Control Panel dan jalankan layanan Apache & MySQL.
+
+b. Buka http://localhost/phpmyadmin di browser Anda.
+
+c. Buat database baru yang masih kosong dengan nama winnicode.
+
+d. Buka file .env dan pastikan konfigurasi database Anda sudah benar. Seharusnya terlihat seperti ini:
+
+```DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=up2date
+DB_USERNAME=root
+DB_PASSWORD=
+```
+e. Kembali ke phpMyAdmin, klik pada database up2date yang baru Anda buat di panel kiri.
+
+f. Buka tab "Import".
+
+g. Klik tombol "Choose File" dan pilih file .sql yang sudah tersedia di dalam folder proyek ini.
+
+
+Aplikasi ini menggunakan aset gambar (seperti thumbnail artikel)  dari file public/asset/uplod yang telah disediakan bersama proyek. Ikuti langkah-langkah berikut:
+
+
+Jalankan Aplikasi
+
+Jalankan Server Laravel
+
+php artisan serve
+Akses Aplikasi
+
+Admin Logins:
+url:{your host}/admin/login   
+email: admin@gmail.com
+password: password
+
+User Logins:
+email: user123@gmail.com
+password: 12345678
+
+Writer Logins:
+url:{your host}/admin/login
+email: writer@gmail.com
+password: 12345678
